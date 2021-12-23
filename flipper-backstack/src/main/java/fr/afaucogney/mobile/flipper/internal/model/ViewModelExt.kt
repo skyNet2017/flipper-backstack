@@ -33,7 +33,7 @@ internal enum class ViewModelLifeCycle {
 }
 
 internal val ViewModelLifeCycle.key: String
-    get() = this.toString().lowercase(Locale.getDefault())
+    get() = this.toString().toLowerCase()
 
 // ACTIVITY
 internal fun FlipperObject.Builder.addViewModelInfo(activity: Activity): FlipperObject.Builder {

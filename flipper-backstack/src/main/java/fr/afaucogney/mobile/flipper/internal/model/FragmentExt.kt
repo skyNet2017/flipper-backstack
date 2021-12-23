@@ -52,7 +52,7 @@ internal val Fragment.type: String
     get() = FlipperObjectType.FRAGMENT.key
 
 internal val FragmentLifeCycle.key: String
-    get() = this.toString().lowercase(Locale.getDefault())
+    get() = this.toString().toLowerCase()
 
 internal fun Fragment.storeFragmentToMapIfNecessary(event: FragmentLifeCycle?) {
     this.toFlipperObjectBuilder()
